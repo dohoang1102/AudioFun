@@ -23,16 +23,22 @@
 		16CA533114F297D5002BAA2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		16CA533314F297D5002BAA2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		16CA533514F297D5002BAA2D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		16CA533914F297D5002BAA2D /* AudioFun-Info.plist */ = {isa = PBXFileReference; path = "AudioFun-Info.plist"; sourceTree = "<group>"; };
+		16CA533914F297D5002BAA2D /* AudioFun-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioFun-Info.plist"; sourceTree = "<group>"; };
 		16CA533B14F297D5002BAA2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		16CA533D14F297D5002BAA2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		16CA533F14F297D5002BAA2D /* AudioFun-Prefix.pch */ = {isa = PBXFileReference; path = "AudioFun-Prefix.pch"; sourceTree = "<group>"; };
-		16CA534014F297D5002BAA2D /* KVAppDelegate.h */ = {isa = PBXFileReference; path = KVAppDelegate.h; sourceTree = "<group>"; };
+		16CA533F14F297D5002BAA2D /* AudioFun-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioFun-Prefix.pch"; sourceTree = "<group>"; };
+		16CA534014F297D5002BAA2D /* KVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVAppDelegate.h; sourceTree = "<group>"; };
 		16CA534114F297D5002BAA2D /* KVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVAppDelegate.m; sourceTree = "<group>"; };
-		16CA534314F297D5002BAA2D /* KVViewController.h */ = {isa = PBXFileReference; path = KVViewController.h; sourceTree = "<group>"; };
+		16CA534314F297D5002BAA2D /* KVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVViewController.h; sourceTree = "<group>"; };
 		16CA534414F297D5002BAA2D /* KVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVViewController.m; sourceTree = "<group>"; };
 		16CA534714F297D5002BAA2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KVViewController_iPhone.xib; sourceTree = "<group>"; };
 		16CA534A14F297D5002BAA2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KVViewController_iPad.xib; sourceTree = "<group>"; };
+		16CA535214F29809002BAA2D /* AudioEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioEngine.h; sourceTree = "<group>"; };
+		16CA535314F29809002BAA2D /* AudioEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioEngine.m; sourceTree = "<group>"; };
+		16CA535414F29809002BAA2D /* AudioFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioFile.h; sourceTree = "<group>"; };
+		16CA535514F29809002BAA2D /* AudioFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioFile.m; sourceTree = "<group>"; };
+		16CA535614F29809002BAA2D /* AudioHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioHelper.h; sourceTree = "<group>"; };
+		16CA535714F29809002BAA2D /* AudioHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 		16CA532214F297D5002BAA2D = {
 			isa = PBXGroup;
 			children = (
+				16CA535114F297DF002BAA2D /* AudioCore */,
 				16CA533714F297D5002BAA2D /* AudioFun */,
 				16CA533014F297D5002BAA2D /* Frameworks */,
 				16CA532E14F297D5002BAA2D /* Products */,
@@ -99,6 +106,19 @@
 				16CA533F14F297D5002BAA2D /* AudioFun-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16CA535114F297DF002BAA2D /* AudioCore */ = {
+			isa = PBXGroup;
+			children = (
+				16CA535214F29809002BAA2D /* AudioEngine.h */,
+				16CA535314F29809002BAA2D /* AudioEngine.m */,
+				16CA535414F29809002BAA2D /* AudioFile.h */,
+				16CA535514F29809002BAA2D /* AudioFile.m */,
+				16CA535614F29809002BAA2D /* AudioHelper.h */,
+				16CA535714F29809002BAA2D /* AudioHelper.m */,
+			);
+			name = AudioCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
