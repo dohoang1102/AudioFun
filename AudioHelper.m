@@ -3,7 +3,7 @@
 //  CoreAudioTest
 //
 //  Created by Kevin Vitale on 1/20/10.
-//  Copyright 2010 Vectorform, LLC. All rights reserved.
+//  Copyright 2010 Kevin Vitale. All rights reserved.
 //
 
 #import "AudioHelper.h"
